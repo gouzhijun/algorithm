@@ -10,7 +10,7 @@ import java.util.Set;
  * @Author: gouzhijun
  * @Date: 2020/7/1
  */
-public class Nquee {
+public class Nqueen {
     public List<List<String>> solveNQueens(int n) {
         Set<String> availablePositions = initAvailablePositions(n);
         List<List<String>> solves = new ArrayList();
@@ -98,7 +98,7 @@ public class Nquee {
 
 
     public static void main(String[] args) {
-        Nquee nquee = new Nquee();
+        Nqueen nquee = new Nqueen();
         List<List<String>> solves = nquee.solveNQueens(3);
         int i = 0;
         for (List<String> solve : solves) {
